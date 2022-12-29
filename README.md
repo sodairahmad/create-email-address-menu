@@ -56,19 +56,19 @@ root.mainloop()
 
 END().............................................
 
-TITLE (DESTROY EMAIL ENTER AND LABEL, PASSWORD ENTRY AND LABEL)
+#TITLE (DESTROY EMAIL ENTER AND LABEL, PASSWORD ENTRY AND LABEL)
 
 CODE
 
 import tkinter as tk
 from tkinter import ttk
 from tkinter.messagebox import showinfo
-
+# LOG IN
 def log_in():
     mesg=f" your gmail address is :[ {enterEmail.get()}] and your password is : [" \
          f"{enterpassword.get()}]"
     showinfo(title='information of a person gmail',message=mesg)
-
+# DESTROY
 def cancel():
     #des = emaillabel.destroy()
     mesg=f"you have been cancelled your [ email  label] {emaillabel.destroy()} your" \
